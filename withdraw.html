@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Withdraw money from the customer's account</title>
+    <link rel="shortcut icon" href="./resources/favicon.ico">
+    <link rel="stylesheet" href="./resources/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./resources/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="./resources/css/withdraw.css">
+</head>
+<body>
+    <div class="container">
+            <div class="table-title mb-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>Withdraw money from the customer's account</h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="/boostrap_banking/index.html" class="btn btn-outline-light">
+                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                            <span>Customer list</span>
+                        </a>    
+                    </div>
+                </div> 
+            </div>
+        <form action="" id="frmWithdaw" method="post">
+            <fieldset class="row g-3">
+                <div class="mb-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-form-label">Customer ID</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" readonly id="customerId" name="customerID" value="455"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-md-6">
+                    <div class="form-group row">
+                        <label class="col-sm-12 col-form-label">FullName</label> 
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="fullName" readonly id="fullName" value="fuc is boy"/>
+                            </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-md-6">
+                    <div class="form-group row">
+                        <label for="" class="col-sm-12 col-form-label">Current balance ($)</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control num-space" readonly id="balance" value="788" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-md-6" >
+                    <div class="form-group row">
+                        <label for="" class="col-sm-12 col-form-label">Transaction Amount ($)</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control num-space" maxlength="14" id="transaction" name="transaction" value=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 col-md-12">
+                    <div class="form-group row">
+                        <div class="col-sm-4">  
+                            <button type="submit" class="btn btn-outline-warning">
+                                <a href="../boostrap_banking/index.html">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                 Withdraw
+                                </a>                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="footer">
+        <div id="message-alert">
+            
+            
+            <div class="alert-danger hide">
+                <h5>Please correct errors below:</h5>
+            </div>
+            
+        </div>
+    </div> 
+
+
+    <script type="text/javascript" src="/resources/js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.validate-1.19.3.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/resources/js/popper-v1.16.0.min.js"></script>
+    <script type="text/javascript" src="/resources/js/jquery.number.js"></script>
+    <script type="text/javascript" src="/resources/js/custom-validation.js"></script>
+    <script type="text/javascript" src="/resources/js/app.js"></script>
+</body>
+</html>
